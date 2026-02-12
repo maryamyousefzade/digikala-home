@@ -1,0 +1,52 @@
+.sales {
+  &__content {
+    @include responsive(tabletL) {
+      width: 90% !important;
+      margin: 1rem auto !important;
+      border-radius: 1.5rem !important;
+    }
+  }
+  &__percent {
+    @include responsive(tabletL) {
+      font-size: $fs-lg !important;
+      width: 40%;
+    }
+  }
+  &__slider {
+    &-start {
+      width: 13rem;
+      height: 26rem;
+      margin-left: 2rem;
+    }
+    &-nav {
+      position: absolute;
+    }
+    &-slide {
+      width: 25rem !important;
+      height: 28rem !important;
+      @include responsive(tablet) {
+        width: 25rem !important;
+        height: 30rem !important;
+      }
+      &--circle {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+    &-text {
+      @include responsive(tabletL) {
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.swiper3 {
+  position: relative;
+}
+.swiper-button-prev.sales__slider-nav.swiper-button-disabled {
+  display: none !important;
+}
+.swiper-button-next.sales__slider-nav.swiper-button-disabled {
+  display: none !important;
+}

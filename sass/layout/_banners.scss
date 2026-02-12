@@ -1,0 +1,5 @@
+.banners {
+  @include responsive(tabletL) {
+    flex-direction: row !important;
+  }
+}

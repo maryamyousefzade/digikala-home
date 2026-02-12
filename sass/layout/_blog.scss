@@ -1,0 +1,10 @@
+.blog {
+  &__items {
+    max-width: 90vw;
+    overflow: hidden;
+
+    &-card {
+      width: 30rem !important;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.stories {
+  @include responsive(tabletL) {
+    width: 90% !important;
+    margin: 4.5rem auto !important;
+  }
+  &__text {
+    max-width: 8.5rem;
+    min-height: 5rem;
+    & > span {
+      @include responsive(tabletL) {
+        font-size: $fs-lg !important;
+      }
+    }
+  }
+  &__img {
+    width: 11rem;
+    height: 11rem;
+    background: linear-gradient(
+      180deg,
+      $purple,
+      $purple 20%,
+      $pink,
+      $pink 100%
+    );
+    @include responsive(tabletL) {
+      width: 8.5rem;
+      height: 8.5rem;
+    }
+    & > img {
+      width: 10.5rem;
+      height: 10.5rem;
+      @include responsive(tabletL) {
+        width: 7.9rem;
+        height: 7.9rem;
+      }
+    }
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0;
+  @include responsive(tabletL) {
+    opacity: 1;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: $fs-md;
+  color: $icon;
+  font-weight: bold;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.1rem solid rgb(209, 207, 207);
+  padding: 2rem;
+  background-color: $bg;
+  @include centerizeTag();
+}
+.swiper-button-prev.stories__nav.swiper-button-disabled {
+  display: none !important;
+}
+.swiper-button-next.stories__nav.swiper-button-disabled {
+  display: none !important;
+}

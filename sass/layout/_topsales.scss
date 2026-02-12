@@ -1,0 +1,81 @@
+.topsales {
+  &__viewport {
+    max-height: 40rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+    @include responsive(tabletL) {
+      max-height: 200rem;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: repeat(6, 1fr);
+    @include responsive(tabletL) {
+      grid-template-columns: repeat(6, 1fr);
+      grid-row: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width: 43em) {
+      .topsales__content-percent {
+        width: 18% !important;
+      }
+    }
+    @media only screen and (min-width: 37.5em) {
+      .topsales__content-svg {
+        width: 15% !important;
+      }
+    }
+    @media only screen and (min-width: 48em) {
+      .topsales__content-svg {
+        width: 10% !important;
+      }
+    }
+    @media only screen and (min-width: 62em) {
+      .topsales__content-svg {
+        width: 19% !important;
+      }
+    }
+    @media only screen and (min-width: 75em) {
+      .topsales__content-svg {
+        width: 13% !important;
+      }
+    }
+    &--borders {
+      @include responsive(tabletL) {
+        border-left: 1px solid $icon-bg;
+      }
+    }
+    &-img {
+      width: 100% !important;
+      @include responsive(tablet) {
+        width: 50% !important;
+      }
+    }
+    &-svg {
+      @include responsive(tabletL) {
+        width: 35% !important;
+      }
+    }
+  }
+  &__percent {
+    @include responsive(mobile) {
+      width: 25% !important;
+      font-size: $fs-lg !important;
+    }
+    @include responsive(tablet) {
+      width: 25% !important;
+      font-size: 1.2rem !important;
+    }
+  }
+  &__price {
+    @include responsive(mobile) {
+      font-size: 1.6rem !important;
+    }
+    @include responsive(tablet) {
+      font-size: 1.4rem !important;
+    }
+  }
+}

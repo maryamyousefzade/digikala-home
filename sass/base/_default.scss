@@ -1,0 +1,42 @@
+* {
+  direction: rtl;
+}
+html {
+  font-size: 62.5%;
+  //* 1rem=10px;
+  @include responsive(mobileS) {
+    font-size: 50%;
+  }
+  @include responsive(mobile) {
+    font-size: 50%;
+  }
+  @include responsive(tablet) {
+    font-size: 43.75%;
+  }
+  @include responsive(tabletL) {
+    font-size: 56.25%;
+  }
+  @include responsive(desktop) {
+    font-size: 62.5%;
+  }
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --bs-body-bg: #ffffff;
+}
+body {
+  --bs-body-font-size: 1.2rem;
+  --bs-body-color: #101010;
+  --bs-body-font-family: IranSansWeb, "sans-serif";
+}
+body * :focus {
+  outline: none;
+  box-shadow: none;
+}

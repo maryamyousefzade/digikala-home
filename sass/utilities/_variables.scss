@@ -1,0 +1,49 @@
+//! Bootstrap Color Overrides
+$bg: #ffffff;
+$primary: #d32f2f;
+$icon: rgb(95, 96, 98);
+$icon-bg: rgb(227, 227, 230);
+$header-icon: #373535;
+$gray-bg: #e0e0e2;
+$black: #0c0c0c;
+$sub: #81858b;
+$pink: #e03d96;
+$pink-bright: #fdecf5;
+$purple: #7d4c9e;
+$btn-blue: #19bfd3;
+$navy: #3c4b6d;
+$green: #029a49;
+$orange: #f37a10;
+$orange-bright: rgb(251, 237, 225);
+$gold: #ecd10b;
+$gray: rgb(183, 183, 196);
+//! color Maps
+$theme-colors: (
+  "bg": $bg,
+  "primary": $primary,
+  "icon": $icon,
+  "icon-bg": $icon-bg,
+  "gray-bg": $gray-bg,
+  "black": $black,
+  "sub": $sub,
+  "pink": $pink,
+  "pink-bright": $pink-bright,
+  "purple": $purple,
+  "btn-blue": $btn-blue,
+  "navy": $navy,
+  "green": $green,
+  "orange": $orange,
+  "orange-bright": $orange-bright,
+  "header-icon": $header-icon,
+  "gold": $gold,
+  "gray": $gray,
+);
+// !override Font Size
+$fs-xsm: 0.8rem;
+$fs-sm: 1.1rem;
+$fs-md: 1.2rem;
+$fs-lg: 1.3rem;
+$fs-xlg: 1.6rem;
+$fs-2xlg: 1.8rem;
+$fs-title: 2.1rem;
+$fs-num: 2.6rem;

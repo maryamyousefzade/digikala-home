@@ -1,0 +1,60 @@
+.footer {
+  &--tabletL {
+    display: NONE;
+    @include responsive(tabletL) {
+      display: inline-block;
+    }
+  }
+  &__links {
+    &-social {
+      width: 5rem;
+      height: 5rem;
+      fill: $sub;
+    }
+  }
+  &__mail {
+    &-input {
+      border: none;
+      min-height: 5rem;
+    }
+    &-button {
+      border: none;
+      min-height: 5rem;
+      opacity: 0.5;
+    }
+  }
+  &__about {
+    display: inline-block;
+    max-height: 9rem;
+    overflow: hidden;
+  }
+  &__namad {
+    width: 9rem;
+    height: 9rem;
+  }
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    &-img {
+      width: 10rem;
+    }
+  }
+  &--mobile {
+    margin-bottom: 15rem;
+    @include responsive(tabletL) {
+      display: none !important;
+    }
+    &-fixed {
+      position: fixed;
+      bottom: 0;
+      z-index: 20;
+      @include responsive(tabletL) {
+        visibility: hidden;
+      }
+    }
+    &-magnet {
+      transform: rotate(90deg);
+    }
+  }
+}

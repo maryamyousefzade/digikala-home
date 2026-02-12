@@ -1,0 +1,15 @@
+.partnership {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    @include responsive(tabletL) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+  }
+  &__item {
+    max-height: 32rem !important;
+  }
+}

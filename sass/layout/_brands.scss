@@ -1,0 +1,44 @@
+.brands {
+  @include responsive(tabletL) {
+    border: solid 0.1rem $icon-bg;
+    border-radius: 1rem;
+  }
+  &__title {
+    @include responsive(tabletL) {
+      @include centerizeTag();
+    }
+  }
+  &__swiper {
+    &-slide {
+      border-radius: 1rem !important;
+      padding: 0 !important;
+      @include responsive(tabletL) {
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-right: 0 !important;
+        border-left: solid 0.1rem $icon-bg !important;
+        border-radius: 0 !important;
+      }
+    }
+    &-image {
+      width: 15rem !important;
+      height: 18rem;
+      &-img {
+        width: 15rem !important;
+        height: 18rem !important;
+        border-radius: 1rem 1rem 0 0 !important;
+        @include responsive(tabletL) {
+          background-color: $bg !important;
+          width: 13rem !important;
+        }
+      }
+    }
+    &-text {
+      @include responsive(tabletL) {
+        @include responsive(tabletL) {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

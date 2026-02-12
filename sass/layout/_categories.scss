@@ -1,0 +1,20 @@
+.categories {
+  &__swiper {
+    &-content {
+      padding-inline-end: 10rem !important;
+    }
+    &-slide {
+      min-height: 27rem;
+      width: 15rem !important;
+    }
+    &-item {
+      cursor: pointer;
+      &-img {
+        & > img {
+          width: 9rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}

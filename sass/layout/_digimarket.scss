@@ -1,0 +1,26 @@
+.digimarket {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+  @include responsive(tabletL) {
+    display: flex;
+  }
+  &--mobile {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 10;
+    @include responsive(mobile) {
+      width: 15% !important;
+    }
+    @include responsive(tablet) {
+      width: 10% !important;
+    }
+    @include responsive(tabletL) {
+      display: none;
+    }
+  }
+}

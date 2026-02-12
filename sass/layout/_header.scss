@@ -1,0 +1,95 @@
+.header {
+  position: sticky;
+  top: 0rem;
+  z-index: 20;
+  &__logo {
+    width: 25%;
+    @include responsive(tabletL) {
+      display: flex !important ;
+    }
+  }
+  &__banner > img {
+    min-height: 40px;
+    object-fit: cover;
+  }
+  &__search {
+    width: 70%;
+  }
+  &__actions {
+    &--line {
+      width: 0.2rem;
+      height: 2.5rem;
+      background-color: $icon-bg;
+    }
+    &-login {
+      & > svg {
+        width: 3rem;
+        fill: $header-icon;
+      }
+    }
+    &-cart {
+      &-svg {
+        width: 3rem;
+        fill: $header-icon;
+      }
+    }
+  }
+  &__nav {
+    &-text {
+      @include responsive(tabletL) {
+        font-size: 1.4rem !important;
+      }
+    }
+    &-svg {
+      color: $icon;
+      width: 1.2rem;
+      height: 1.2rem;
+      @include responsive(tabletL) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+  &__location {
+    &-svg {
+      width: $fs-title;
+      fill: $orange;
+    }
+    @include responsive(desktop) {
+      padding: 0.5rem;
+    }
+  }
+  &__bottom {
+    box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+  }
+  &__tabletL {
+    &-nav {
+      &-img {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    &-search {
+      height: 7rem;
+      width: 94% !important;
+      &-camera {
+        left: 3rem;
+        color: blue;
+        font-size: 3rem;
+      }
+    }
+    &-notif {
+      height: 7rem;
+      width: 7rem;
+      margin-right: 1rem;
+    }
+    &-location {
+      &-svg {
+        fill: black;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}

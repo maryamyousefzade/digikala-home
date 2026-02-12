@@ -1,0 +1,25 @@
+//!Import Fonts
+@font-face {
+  font-family: IranSansWeb;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../public/fonts/eot/IRANSansX-Medium.eot?#iefix) format(eot),
+    url(../../public/fonts/ttf/IRANSansX-Medium.ttf) format(ttf),
+    url(../../public/fonts/woff/IRANSansX-Medium.woff) format(woff);
+}
+@font-face {
+  font-family: IranSansWeb;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../public/fonts/eot/IRANSansX-Regular.eot) format(eot),
+    url(../../public/fonts/ttf/IRANSansX-Regular.ttf) format(ttf),
+    url(../../public/fonts/woff/IRANSansX-Regular.woff) format(woff);
+}
+@font-face {
+  font-family: IranSansWeb;
+  font-style: normal;
+  font-weight: bold;
+  src: url(../../public/fonts/eot/IRANSansX-Bold.eot?#iefix) format(eot),
+    url(../../public/fonts/ttf/IRANSansX-Bold.ttf) format(ttf),
+    url(../../public/fonts/woff/IRANSansX-Bold.woff) format(woff);
+}
