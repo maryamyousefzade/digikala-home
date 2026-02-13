@@ -25,9 +25,9 @@
 // desktopL--->1800px--->112.5 em
 
 @mixin responsive($breakpoint) {
-  //!  mobileS--->400px--->25em
+  //!  mobileS--->300px--->18.75em
   @if $breakpoint == mobileS {
-    @media only screen and (min-width: 25em) {
+    @media only screen and (min-width: 18.75em) {
       @content;
     }
   }
